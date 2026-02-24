@@ -1,13 +1,12 @@
 'use client';
 
-import { AnimatePresence, motion, useAnimationControls } from 'framer-motion';
+import { motion, useAnimationControls } from 'framer-motion';
 import { useEffect } from 'react';
 
 interface BottleCapProps {
   isOpen: boolean;
   x?: number;
   y?: number;
-  /** Optional: min/max seconds between wiggles */
   wiggleMinDelaySec?: number;
   wiggleMaxDelaySec?: number;
 }
@@ -22,18 +21,28 @@ export default function BottleCap({
   const controls = useAnimationControls();
 
   useEffect(() => {
-    if (isOpen) return;
-
     let cancelled = false;
-
     const sleep = (ms: number) => new Promise<void>((res) => setTimeout(res, ms));
 
-    async function loop() {
-      // Ensure we start from a neutral pose
-      await controls.set({ rotate: 0, y: 0 });
+    async function run() {
+      if (isOpen) {
+        // Stop any wiggle mid-flight and fly away
+        controls.stop();
+        await controls.start({
+          opacity: 0,
+          x: -160,
+          y: -190,
+          rotate: -55,
+          transition: { duration: 0.9, ease: 'easeOut' },
+        });
+        return;
+      }
 
+      // Reset to resting pose when closed
+      await controls.set({ opacity: 1, x: 0, y: 0, rotate: 0 });
+
+      // Wiggle loop while closed
       while (!cancelled) {
-        // Random pause between wiggles
         const delaySec =
           wiggleMinDelaySec +
           Math.random() * Math.max(0, wiggleMaxDelaySec - wiggleMinDelaySec);
@@ -41,17 +50,14 @@ export default function BottleCap({
         await sleep(delaySec * 1000);
         if (cancelled) break;
 
-        // Wiggle burst (subtle rotation + tiny vertical bounce)
+        // More pronounced wiggle (tweak numbers as you like)
         await controls.start({
-          rotate: [0, -5, 4, -3, 2, 0],
-          y: [0, -0.5, 0.3, -0.2, 0],
-          transition: {
-            duration: 0.85,
-            ease: 'easeInOut',
-          },
+          rotate: [0, -9, 7, -5, 3, 0],
+          y: [0, -1.2, 0.6, -0.4, 0],
+          transition: { duration: 0.8, ease: 'easeInOut' },
         });
 
-        // Return to rest (extra safety)
+        // Settle
         await controls.start({
           rotate: 0,
           y: 0,
@@ -60,67 +66,28 @@ export default function BottleCap({
       }
     }
 
-    loop();
+    run();
 
     return () => {
       cancelled = true;
-      // Stop any in-flight animation to avoid state updates after unmount
       controls.stop();
     };
   }, [isOpen, controls, wiggleMinDelaySec, wiggleMaxDelaySec]);
 
   return (
-    <AnimatePresence>
-      {!isOpen && (
-        <motion.g
-          key="cork"
-          style={{ transformBox: 'fill-box', transformOrigin: 'center bottom' }}
-          initial={{ rotate: 0, y: 0 }}
-          animate={controls}
-          exit={{
-            x: -160,
-            y: -190,
-            rotate: -55,
-            opacity: 0,
-            transition: { duration: 1.0, ease: 'easeOut' },
-          }}
-        >
-          {/* Cork body */}
-          <rect x={x - 8} y={y - 18} width={16} height={18} rx={2} fill="#c8b48a" />
-
-          {/* Cork top cap */}
-          <rect x={x - 10} y={y - 22} width={20} height={6} rx={1} fill="#b8a47a" />
-
-          {/* Cork grain lines */}
-          <line
-            x1={x - 5}
-            y1={y - 16}
-            x2={x - 5}
-            y2={y - 4}
-            stroke="#a8946a"
-            strokeWidth={0.8}
-            strokeOpacity={0.4}
-          />
-          <line
-            x1={x}
-            y1={y - 17}
-            x2={x}
-            y2={y - 3}
-            stroke="#a8946a"
-            strokeWidth={0.8}
-            strokeOpacity={0.4}
-          />
-          <line
-            x1={x + 5}
-            y1={y - 16}
-            x2={x + 5}
-            y2={y - 4}
-            stroke="#a8946a"
-            strokeWidth={0.8}
-            strokeOpacity={0.4}
-          />
-        </motion.g>
-      )}
-    </AnimatePresence>
+    <motion.g
+      style={{ transformBox: 'fill-box', transformOrigin: 'center bottom' }}
+      initial={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
+      animate={controls}
+    >
+      {/* Cork body */}
+      <rect x={x - 8} y={y - 18} width={16} height={18} rx={2} fill="#c8b48a" />
+      {/* Cork top cap */}
+      <rect x={x - 10} y={y - 22} width={20} height={6} rx={1} fill="#b8a47a" />
+      {/* Cork grain lines */}
+      <line x1={x - 5} y1={y - 16} x2={x - 5} y2={y - 4} stroke="#a8946a" strokeWidth={0.8} strokeOpacity={0.4} />
+      <line x1={x} y1={y - 17} x2={x} y2={y - 3} stroke="#a8946a" strokeWidth={0.8} strokeOpacity={0.4} />
+      <line x1={x + 5} y1={y - 16} x2={x + 5} y2={y - 4} stroke="#a8946a" strokeWidth={0.8} strokeOpacity={0.4} />
+    </motion.g>
   );
 }
