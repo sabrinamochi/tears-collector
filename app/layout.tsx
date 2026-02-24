@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 
+export const metadataBase = new URL('https://sabrinamochi.github.io');
+
 const fraunces = Fraunces({
   subsets: ["latin"],
   style: ["normal", "italic"],
@@ -15,7 +17,7 @@ const inter = Inter({
   variable: "--font-ui",
 });
 
-export const metadataBase = new URL("https://sabrinamochi.github.io");
+
 export const metadata = {
   title: "Tears Collector",
   description: "A small project documenting my feelings after being laid off.",
