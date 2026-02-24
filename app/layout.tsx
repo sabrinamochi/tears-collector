@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
-import { Instrument_Serif, DM_Mono } from 'next/font/google';
+import { Fraunces, Inter } from 'next/font/google';
 import './globals.css';
 
-const display = Instrument_Serif({
+const fraunces = Fraunces({
   subsets: ['latin'],
   style: ['normal', 'italic'],
-  weight: '400',
+  weight: ['300', '400'],
   variable: '--font-display',
 });
 
-const mono = DM_Mono({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400'],
-  variable: '--font-mono',
+  weight: ['300', '400', '500'],
+  variable: '--font-ui',
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${display.variable} ${mono.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
       <body>
         <svg
           width="0"

@@ -3,9 +3,9 @@
 import { useTearStore } from '@/lib/store';
 
 const MOODS = [
-  { id: 'sad',   label: 'sad',   color: '#7aadca' },
-  { id: 'happy', label: 'happy', color: '#d4a843' },
-  { id: 'yawn',  label: 'yawn',  color: '#a09a93' },
+  { id: 'sad',     label: 'sad',     color: '#7399d0' },
+  { id: 'touched', label: 'touched', color: '#C8A36A' },
+  { id: 'unsure',  label: 'unsure',  color: '#7A7D80' },
 ];
 
 export default function Legend() {
@@ -16,12 +16,12 @@ export default function Legend() {
     <div
       style={{
         position: 'fixed',
-        bottom: 24,
-        left: 24,
+        top: 95,
+        left: 28,
         zIndex: 100,
         display: 'flex',
         flexDirection: 'column',
-        gap: 6,
+        gap: 2,
       }}
     >
       {MOODS.map(m => (
@@ -29,19 +29,21 @@ export default function Legend() {
           <span
             style={{
               display: 'inline-block',
-              width: 8,
-              height: 8,
+              width: 10,
+              height: 10,
               background: m.color,
+              borderRadius: '50%',
+              opacity: 0.82,
               flexShrink: 0,
             }}
           />
           <span
             style={{
-              fontFamily: 'var(--font-mono)',
-              fontSize: 9,
-              textTransform: 'uppercase',
-              letterSpacing: '0.12em',
-              color: 'var(--muted)',
+              fontFamily: 'var(--font-ui)',
+              fontSize: 14,
+              fontWeight: 300,
+              letterSpacing: '0.03em',
+              color: 'var(--ink-35)',
             }}
           >
             {m.label}

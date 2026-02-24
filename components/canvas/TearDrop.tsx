@@ -1,7 +1,7 @@
 'use client';
 
-import { useMemo } from 'react';
-import { motion } from 'framer-motion';
+import { useMemo, useEffect, useLayoutEffect, useCallback } from 'react';
+import { motion, useAnimation, useMotionValue, type Transition, type TargetAndTransition } from 'framer-motion';
 import { TearEntry } from '@/lib/types';
 import {
   TEAR_BASE_PATH,
@@ -13,26 +13,33 @@ import {
 import { seededRandom, sr2 } from '@/lib/seededRandom';
 
 const MOOD_COLORS = {
-  sad:   { base: '#7aadca', mid: '#4d87a8', deep: '#2e5f80', stroke: '#3a7096' },
-  happy: { base: '#d4a843', mid: '#b8842a', deep: '#8a5f18', stroke: '#a07020' },
-  yawn:  { base: '#a09a93', mid: '#7a746e', deep: '#5a5450', stroke: '#6a6460' },
+  sad:     { base: '#7399d0', mid: '#4b75b0', deep: '#2e3d52', stroke: 'none' },
+  touched: { base: '#C8A36A', mid: '#9e7a3e', deep: '#9e7a3e', stroke: 'none' },
+  unsure:  { base: '#7A7D80', mid: '#5a5e62', deep: '#5a5e62', stroke: 'none' },
 };
+
+
 
 interface TearDropProps {
   entry: TearEntry;
   isDate: boolean;
+  isScatter: boolean;
+  isActive: boolean;
+  rainStartY: number;
+  rainEndY: number;
   onHover: (entry: TearEntry | null) => void;
+  onTap?: (entry: TearEntry, x: number, y: number) => void;
 }
 
-export default function TearDrop({ entry, isDate, onHover }: TearDropProps) {
-  const { w, h } = getTearSize(entry.id, entry.mood);
+export default function TearDrop({ entry, isDate, isScatter, isActive, rainStartY, rainEndY, onHover, onTap }: TearDropProps) {
+  const { w, h } = getTearSize(entry.id, entry.mood, entry.intensity);
   const { innerIndex, highlightIndex, filterIndex } = getTearVariants(entry.id);
   const colors = MOOD_COLORS[entry.mood];
 
-  const baseOpacity  = 0.60 + seededRandom(entry.id * 13) * 0.25;
-  const innerOpacity = 0.28 + seededRandom(entry.id * 17) * 0.22;
-  const midOpacity   = 0.15 + seededRandom(entry.id * 23) * 0.15;
-  const hlOpacity    = 0.38 + seededRandom(entry.id * 29) * 0.22;
+  const baseOpacity  = 0.88 + seededRandom(entry.id * 13) * 0.20;
+  const innerOpacity = 0.48 + seededRandom(entry.id * 17) * 0.22;
+  const midOpacity   = 0.35 + seededRandom(entry.id * 23) * 0.15;
+  const hlOpacity    = 0.2 + seededRandom(entry.id * 29) * 0.07;
 
   const rotation = (sr2(entry.id, 77) - 0.5) * (isDate ? 10 : 68);
 
@@ -51,8 +58,7 @@ export default function TearDrop({ entry, isDate, onHover }: TearDropProps) {
           d={TEAR_BASE_PATH}
           fill={colors.base}
           fillOpacity={baseOpacity}
-          stroke={colors.stroke}
-          strokeWidth={0.8}
+          stroke="none"
         />
         {/* 2. Inner pool */}
         <path
@@ -82,38 +88,119 @@ export default function TearDrop({ entry, isDate, onHover }: TearDropProps) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [entry.id, entry.mood]);
 
-  const floatDur = 3.5 + seededRandom(entry.id * 97) * 3.5;
-  const floatY   = 4   + seededRandom(entry.id * 103) * 3;
-  const floatRot = rotation + (seededRandom(entry.id * 107) - 0.5) * 8;
+  // Mood float (unchanged values)
+  const floatDur   = 3.5 + seededRandom(entry.id * 97)  * 3.5;
+  const floatY     = 4   + seededRandom(entry.id * 103) * 3;
+  const floatRot   = rotation + (seededRandom(entry.id * 107) - 0.5) * 8;
   const floatDelay = -(seededRandom(entry.id * 101) * floatDur);
 
-  const floatAnimate = !isDate ? {
-    rotate: [rotation, floatRot],
-    y: [0, -floatY],
-  } : { rotate: rotation };
+  // Rain values — 2.5× slower (6.25–12.5 s)
+  const rainDur   = 18.25 + seededRandom(entry.id * 109) * 30.25;
+  const rainSwayA = (seededRandom(entry.id * 113) - 0.5) * 8;
+  const rainSwayB = (seededRandom(entry.id * 117) - 0.5) * 8;
+  const rainDelay = -(seededRandom(entry.id * 119) * rainDur);
 
-  const floatTransition = !isDate ? {
-    duration: floatDur,
-    repeat: Infinity,
-    repeatType: 'mirror' as const,
-    ease: 'easeInOut' as const,
-    delay: floatDelay,
-  } : {};
+  const innerY = useMotionValue(0);
+  const innerX = useMotionValue(0);
+
+  const rainControls = useAnimation();
+
+  const rainAnimDef = {
+    y: [rainStartY, rainEndY],
+    x: [rainSwayA, rainSwayB],
+    rotate: rotation,
+    transition: {
+      y: {
+        duration: rainDur,
+        repeat: Infinity,
+        repeatType: 'loop' as const,
+        ease: [0.4, 0, 0.6, 1] as [number, number, number, number],
+        delay: rainDelay,
+      },
+      x: {
+        duration: rainDur * 0.7,
+        repeat: Infinity,
+        repeatType: 'mirror' as const,
+        ease: 'easeInOut' as const,
+        delay: rainDelay,
+      },
+      rotate: { duration: 0 },
+    },
+  };
+
+  const startRain = useCallback(() => {
+    rainControls.start(rainAnimDef);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rainControls, rainStartY, rainEndY]);
+
+  // Synchronously zero out inner position before any non-scatter frame renders
+  useLayoutEffect(() => {
+    if (!isScatter) {
+      innerY.set(0);
+      innerX.set(0);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isScatter]);
+
+  // Start/stop rain when scatter mode changes
+  useEffect(() => {
+    if (isScatter) startRain();
+    else rainControls.stop();
+    return () => { rainControls.stop(); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isScatter, rainStartY, rainEndY]);
+
+  // Mobile tap: isActive=true means this tear is selected → pause
+  useEffect(() => {
+    if (!isScatter) return;
+    if (isActive) rainControls.stop();
+    else startRain();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isActive]);
+
+  let tearAnimate: TargetAndTransition;
+  let tearTransition: Transition;
+
+  if (!isScatter) {
+    if (!isDate) {
+      tearAnimate = { rotate: [rotation, floatRot], y: [0, -floatY] };
+      tearTransition = {
+        duration: floatDur, repeat: Infinity, repeatType: 'mirror' as const,
+        ease: 'easeInOut' as const, delay: floatDelay,
+      };
+    } else {
+      // y: 0 clears any residual y offset left by the rain animation
+      tearAnimate = { rotate: rotation, y: 0 };
+      tearTransition = {};
+    }
+  } else {
+    // scatter: controlled by rainControls, these are unused
+    tearAnimate = {};
+    tearTransition = {};
+  }
 
   return (
     <motion.div
-      layout
       style={{
+        y: innerY,
+        x: innerX,
         transformOrigin: '50% 30%',
         willChange: 'transform',
         cursor: 'pointer',
         display: 'inline-block',
       }}
-      animate={floatAnimate}
-      transition={floatTransition}
+      animate={isScatter ? rainControls : tearAnimate}
+      transition={isScatter ? undefined : tearTransition}
       whileHover={{ scale: 1.5 }}
-      onHoverStart={() => onHover(entry)}
-      onHoverEnd={() => onHover(null)}
+      onHoverStart={() => {
+        if (isScatter) rainControls.stop();
+        onHover(entry);
+      }}
+      onHoverEnd={() => {
+        if (isScatter) startRain();
+        onHover(null);
+      }}
+      onClick={(e) => { e.stopPropagation(); onTap?.(entry, e.clientX, e.clientY); }}
     >
       {svgMarkup}
     </motion.div>

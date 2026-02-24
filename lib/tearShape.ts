@@ -1,4 +1,4 @@
-import { Mood } from './types';
+import { Mood, Intensity } from './types';
 import { seededRandom } from './seededRandom';
 
 export const TEAR_BASE_PATH =
@@ -22,20 +22,27 @@ export const HIGHLIGHTS = [
   { cx: 16, cy: 14, rx: 5, ry: 7,  rotate: -25 },
 ];
 
-// Base scale applied to 40x55 viewBox
-export const BASE_SCALE: Record<Mood, number> = {
-  sad:   1.05,
-  happy: 0.90,
-  yawn:  0.82,
+// Intensity is the primary size driver
+export const INTENSITY_SCALE: Record<Intensity, number> = {
+  mist: 0.35,  // barely a tear  — ~13×18px
+  flow: 0.4, // quiet weeping  — ~17×23px
+  pour: 0.5, // full cry       — ~25×34px
+};
+
+// Small mood-based offset for stylistic variation
+const MOOD_SCALE_OFFSET: Record<Mood, number> = {
+  sad:     0.03,
+  touched: 0.00,
+  unsure: -0.02,
 };
 
 // Final size varies per tear (seeded from id)
-export function getTearScale(id: number, mood: Mood): number {
-  return BASE_SCALE[mood] + seededRandom(id * 7) * 0.45;
+export function getTearScale(id: number, mood: Mood, intensity: Intensity): number {
+  return INTENSITY_SCALE[intensity] + MOOD_SCALE_OFFSET[mood] + seededRandom(id * 7) * 0.10;
 }
 
-export function getTearSize(id: number, mood: Mood) {
-  const sc = getTearScale(id, mood);
+export function getTearSize(id: number, mood: Mood, intensity: Intensity) {
+  const sc = getTearScale(id, mood, intensity);
   return { w: Math.round(40 * sc), h: Math.round(55 * sc) };
 }
 

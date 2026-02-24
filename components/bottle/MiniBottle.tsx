@@ -1,10 +1,18 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTearStore } from '@/lib/store';
 
 export default function MiniBottle() {
-  const { formOpen, setFormOpen } = useTearStore();
+  const { formOpen, setFormOpen, lastCollectedId } = useTearStore();
+  const [gulping, setGulping] = useState(false);
+
+  useEffect(() => {
+    if (lastCollectedId === null) return;
+    const t = setTimeout(() => setGulping(true), 550);
+    return () => clearTimeout(t);
+  }, [lastCollectedId]);
 
   return (
     <div
@@ -20,8 +28,14 @@ export default function MiniBottle() {
     >
       <motion.div
         style={{ transformOrigin: 'bottom center' }}
-        animate={{ y: 'calc(100% - 58px)' }}
+        animate={{
+          y: 'calc(100% - 58px)',
+          scaleY: gulping ? [1, 0.91, 1.04, 1] : 1,
+          scaleX: gulping ? [1, 1.06, 0.97, 1] : 1,
+        }}
         initial={{ y: 'calc(100% - 58px)' }}
+        transition={gulping ? { duration: 0.38, ease: 'easeInOut' } : undefined}
+        onAnimationComplete={() => { if (gulping) setGulping(false); }}
       >
         <svg viewBox="0 0 120 78" width={120} height={78} overflow="visible">
           {/* Jar body */}
@@ -42,6 +56,24 @@ export default function MiniBottle() {
           />
           {/* Glass shine */}
           <line x1={17} y1={35} x2={17} y2={68} stroke="white" strokeWidth={1.5} strokeOpacity={0.3} />
+
+          {/* Ripple on gulp */}
+          <AnimatePresence>
+            {gulping && (
+              <motion.circle
+                key="ripple"
+                cx={60}
+                cy={50}
+                fill="none"
+                stroke="var(--glass-stroke)"
+                strokeWidth={1}
+                initial={{ r: 2, opacity: 0.6 }}
+                animate={{ r: 18, opacity: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.38, ease: 'easeOut' }}
+              />
+            )}
+          </AnimatePresence>
 
           {/* Cork */}
           <AnimatePresence>

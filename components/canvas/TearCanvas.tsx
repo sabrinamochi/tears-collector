@@ -6,19 +6,37 @@ import { useTearStore } from '@/lib/store';
 import { TearEntry } from '@/lib/types';
 import { getTearSize } from '@/lib/tearShape';
 import { scatterPos, moodPos, datePos } from '@/lib/positions';
+import { supabase } from '@/lib/supabase';
 import TearDrop from './TearDrop';
 import TearTooltip from './TearTooltip';
 import DateAxis from '@/components/ui/DateAxis';
 
 interface Vp { w: number; h: number }
 
+// Module-level flag: burst plays once per page lifecycle, not per mount
+let burstDone = false;
+
+function dbRowToEntry(row: Record<string, unknown>): TearEntry {
+  return {
+    id:        Number(row.id),
+    mood:      row.mood as TearEntry['mood'],
+    note:      (row.note as string) ?? '',
+    intensity: (row.intensity as TearEntry['intensity']) ?? 'flow',
+    nickname:  (row.nickname as string) || undefined,
+    date:      row.date as string,
+    createdAt: new Date(row.created_at as string).getTime(),
+  };
+}
+
 export default function TearCanvas() {
-  const { entries, sort, introduced } = useTearStore();
+  const { entries, sort, lastCollectedId, clearLastCollected, setEntries, setLastCollectedId } = useTearStore();
   const [vp, setVp] = useState<Vp>({ w: 0, h: 0 });
   const [hoveredEntry, setHoveredEntry] = useState<TearEntry | null>(null);
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
-  const [hasBurst, setHasBurst] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [hasBurst, setHasBurst] = useState(burstDone);
   const resizeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const seenIds = useRef<Set<number>>(new Set());
 
   useEffect(() => {
     const updateVp = () => setVp({ w: window.innerWidth, h: window.innerHeight });
@@ -32,12 +50,80 @@ export default function TearCanvas() {
   }, []);
 
   useEffect(() => {
-    if (introduced) setHasBurst(true);
-  }, [introduced]);
+    const mq = window.matchMedia('(hover: none)');
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  const handleTearTap = useCallback((entry: TearEntry, x: number, y: number) => {
+    if (!isMobile) return;
+    if (hoveredEntry?.id === entry.id) {
+      setHoveredEntry(null);
+    } else {
+      setHoveredEntry(entry);
+      setCursor({ x, y });
+    }
+  }, [isMobile, hoveredEntry]);
+
+  useEffect(() => {
+    if (burstDone) return;
+    // Let burst animation complete before enabling normal sort transitions
+    // Max burst duration: 14 * 0.032s delay + 1.0s animation ≈ 1.45s
+    const t = setTimeout(() => {
+      setHasBurst(true);
+      burstDone = true;
+    }, 2000);
+    return () => clearTimeout(t);
+  }, []);
+
+  useEffect(() => {
+    if (!lastCollectedId) return;
+    const t = setTimeout(clearLastCollected, 2000);
+    return () => clearTimeout(t);
+  }, [lastCollectedId, clearLastCollected]);
+
+  // Fetch all entries + realtime subscription
+  useEffect(() => {
+    async function loadEntries() {
+      const { data, error } = await supabase
+        .from('tear_entries')
+        .select('*')
+        .order('created_at', { ascending: true });
+
+      if (error) { console.error('fetch entries', error); return; }
+
+      const mapped = (data ?? []).map(dbRowToEntry);
+      mapped.forEach((e: TearEntry) => seenIds.current.add(e.id));
+      setEntries(mapped);
+    }
+
+    loadEntries();
+
+    const channel = supabase
+      .channel('tear_entries_all')
+      .on(
+        'postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'tear_entries' },
+        (payload: { new: Record<string, unknown> }) => {
+          const newEntry = dbRowToEntry(payload.new);
+          if (!seenIds.current.has(newEntry.id)) {
+            seenIds.current.add(newEntry.id);
+            setEntries([...useTearStore.getState().entries, newEntry]);
+            setLastCollectedId(newEntry.id);
+          }
+        }
+      )
+      .subscribe();
+
+    return () => { supabase.removeChannel(channel); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const getPos = useCallback((entry: TearEntry) => {
     if (!vp.w) return { x: 0, y: 0 };
-    const { h } = getTearSize(entry.id, entry.mood);
+    const { h } = getTearSize(entry.id, entry.mood, entry.intensity);
     if (sort === 'scatter') return scatterPos(entry, entries, vp);
     if (sort === 'mood')    return moodPos(entry, entries, vp);
     return datePos(entry, entries, vp, h);
@@ -48,60 +134,21 @@ export default function TearCanvas() {
 
   if (!vp.w) return null;
 
-  if (entries.length === 0) {
-    return (
-      <div
-        style={{ position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden' }}
-        onMouseMove={e => setCursor({ x: e.clientX, y: e.clientY })}
-      >
-        <div
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            textAlign: 'center',
-            opacity: 0.35,
-          }}
-        >
-          <svg viewBox="0 0 40 55" width={40} height={55} style={{ margin: '0 auto 12px' }}>
-            <path
-              d="M20 1 C19 2, 14 8, 10 14 C5 22, 1 31, 1 39 C1 48, 9.5 54, 20 54 C30.5 54, 39 48, 39 39 C39 31, 35 22, 30 14 C26 8, 21 2, 20 1 Z"
-              fill="var(--ink)"
-              fillOpacity={0.2}
-              stroke="var(--ink)"
-              strokeWidth={0.8}
-              strokeOpacity={0.3}
-            />
-          </svg>
-          <div
-            style={{
-              fontFamily: 'var(--font-display)',
-              fontStyle: 'italic',
-              fontSize: 15,
-              color: 'var(--ink)',
-            }}
-          >
-            add your first tear
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div
       style={{ position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden' }}
       onMouseMove={e => setCursor({ x: e.clientX, y: e.clientY })}
+      onClick={() => { if (isMobile) setHoveredEntry(null); }}
     >
       <AnimatePresence>
         {entries.map((entry, index) => {
           const pos = getPos(entry);
-          const { w, h } = getTearSize(entry.id, entry.mood);
+          const { w, h } = getTearSize(entry.id, entry.mood, entry.intensity);
 
           let animateProps: TargetAndTransition = {
             x: pos.x - w / 2,
             y: pos.y - h / 2,
+            opacity: 1,
           };
 
           let transitionProps: Transition;
@@ -138,6 +185,9 @@ export default function TearCanvas() {
               ? { y: (pos.y - h / 2) - 40, opacity: 0 }
               : undefined;
 
+          const rainStartY = -(pos.y + h / 2);
+          const rainEndY   = vp.h - pos.y + h / 2;
+
           return (
             <motion.div
               key={entry.id}
@@ -150,7 +200,12 @@ export default function TearCanvas() {
               <TearDrop
                 entry={entry}
                 isDate={sort === 'date'}
-                onHover={setHoveredEntry}
+                isScatter={sort === 'scatter'}
+                isActive={isMobile && hoveredEntry?.id === entry.id}
+                rainStartY={rainStartY}
+                rainEndY={rainEndY}
+                onHover={isMobile ? () => {} : setHoveredEntry}
+                onTap={handleTearTap}
               />
             </motion.div>
           );
@@ -159,7 +214,7 @@ export default function TearCanvas() {
 
       {sort === 'date' && <DateAxis entries={entries} vp={vp} />}
 
-      <TearTooltip entry={hoveredEntry} x={cursor.x} y={cursor.y} />
+      <TearTooltip entry={hoveredEntry} x={cursor.x} y={cursor.y} vw={vp.w} isDate={sort === 'date'} />
     </div>
   );
 }

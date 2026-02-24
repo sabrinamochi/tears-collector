@@ -6,25 +6,19 @@ export function scatterPos(
   allEntries: TearEntry[],
   vp: { w: number; h: number }
 ): Position {
-  const sorted = [...allEntries].sort((a, b) => a.id - b.id);
-  const index = sorted.findIndex(e => e.id === entry.id);
-  const total = Math.max(sorted.length, 1);
-
   // Center of the canvas, shifted up a bit for the mini bottle
   const cx = vp.w / 2;
   const cy = vp.h / 2 - 30;
 
-  // Base radius — fits inside the viewport with padding
-  const baseRadius = Math.min(vp.w * 0.38, vp.h * 0.36, 320);
+  // Max radius — fills the viewport as a solid disk
+  const maxRadius = Math.min(vp.w * 0.40, vp.h * 0.38, 340);
 
-  // Evenly spaced angle around the circle, plus a small seeded jitter
-  const sliceAngle = (Math.PI * 2) / total;
-  const angleJitter = (seededRandom(entry.id * 53) - 0.5) * sliceAngle * 0.55;
-  const angle = index * sliceAngle + angleJitter - Math.PI / 2; // start at top
+  // Fully random angle across the full circle
+  const angle = seededRandom(entry.id * 53) * Math.PI * 2;
 
-  // Radial jitter — stay in a band, never let two rings collide
-  const radialBand = baseRadius * 0.18;
-  const radius = baseRadius + (seededRandom(entry.id * 37) - 0.5) * 2 * radialBand;
+  // sqrt normalization gives uniform density across the disk area (not ring-like)
+  const rNorm = Math.sqrt(seededRandom(entry.id * 37));
+  const radius = rNorm * maxRadius;
 
   return {
     x: cx + radius * Math.cos(angle),
@@ -37,18 +31,26 @@ export function moodPos(
   allEntries: TearEntry[],
   vp: { w: number; h: number }
 ): Position {
-  const groups: { sad: number[]; happy: number[]; yawn: number[] } = { sad: [], happy: [], yawn: [] };
-  allEntries.forEach(e => groups[e.mood].push(e.id));
+  const cx = vp.w / 2;
+  const cy = vp.h / 2 - 30;
+  const maxRadius = Math.min(vp.w * 0.40, vp.h * 0.38, 340);
 
-  const centerX = { sad: vp.w * 0.18, happy: vp.w * 0.5, yawn: vp.w * 0.82 };
-  const g = groups[entry.mood];
-  const i = g.indexOf(entry.id);
-  const cols = Math.max(2, Math.ceil(Math.sqrt(g.length)));
-  const spacing = 48 + sr2(entry.id, 9) * 22;
+  // Each mood occupies a 120° arc sector; small gap between groups
+  const arcStart = { sad: 0, touched: (Math.PI * 2) / 3, unsure: (Math.PI * 4) / 3 };
+  const arcSpan = (Math.PI * 2) / 3;
+  const gap = 0.18; // radians of padding at each sector edge
+
+  const start = arcStart[entry.mood] + gap;
+  const span = arcSpan - gap * 2;
+
+  // Reuse same seeds as scatter so radius & relative spread feel continuous
+  const angle = start + seededRandom(entry.id * 53) * span;
+  const rNorm = Math.sqrt(seededRandom(entry.id * 37));
+  const radius = rNorm * maxRadius;
 
   return {
-    x: centerX[entry.mood] + (i % cols - (cols - 1) / 2) * spacing + (sr2(entry.id, 3) - 0.5) * 90,
-    y: vp.h * 0.22 + Math.floor(i / cols) * spacing + (sr2(entry.id, 5) - 0.5) * 65,
+    x: cx + radius * Math.cos(angle),
+    y: cy + radius * Math.sin(angle),
   };
 }
 
@@ -59,8 +61,8 @@ export function datePos(
   tearHeight: number
 ): Position {
   const dates = [...new Set(allEntries.map(e => e.date))].sort();
-  const colW = (vp.w - 140) / dates.length;
-  const x = 70 + dates.indexOf(entry.date) * colW + colW / 2;
+  const colW = (vp.w - 80) / dates.length;
+  const x = 40 + dates.indexOf(entry.date) * colW + colW / 2;
 
   const sameDate = allEntries
     .filter(e => e.date === entry.date)
@@ -68,6 +70,6 @@ export function datePos(
 
   return {
     x,
-    y: vp.h * 0.76 - sameDate.findIndex(e => e.id === entry.id) * (tearHeight + 5),
+    y: vp.h * 0.76 - sameDate.findIndex(e => e.id === entry.id) * (tearHeight + 25),
   };
 }

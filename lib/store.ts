@@ -3,47 +3,39 @@ import { persist } from 'zustand/middleware';
 import { TearEntry, SortMode } from './types';
 
 interface TearStore {
-  entries:     TearEntry[];
-  sort:        SortMode;
-  formOpen:    boolean;
-  introduced:  boolean;
+  entries:         TearEntry[];
+  sort:            SortMode;
+  formOpen:        boolean;
+  introduced:      boolean;
+  lastCollectedId: number | null;
 
-  addEntry:      (e: Omit<TearEntry, 'id' | 'createdAt'>) => void;
-  setSort:       (s: SortMode) => void;
-  setFormOpen:   (open: boolean) => void;
-  setIntroduced: () => void;
+  setEntries:         (entries: TearEntry[]) => void;
+  setSort:            (s: SortMode) => void;
+  setFormOpen:        (open: boolean) => void;
+  setIntroduced:      () => void;
+  setLastCollectedId: (id: number | null) => void;
+  clearLastCollected: () => void;
 }
 
 export const useTearStore = create<TearStore>()(
   persist(
     (set) => ({
-      entries:    [],
-      sort:       'scatter',
-      formOpen:   false,
-      introduced: false,
+      entries:         [],
+      sort:            'scatter',
+      formOpen:        false,
+      introduced:      false,
+      lastCollectedId: null,
 
-      addEntry: (e) => set((s) => ({
-        entries: [...s.entries, {
-          ...e,
-          id: Date.now(),
-          createdAt: Date.now(),
-        }],
-      })),
-
-      setSort:       (sort) => set({ sort }),
-      setFormOpen:   (formOpen) => set({ formOpen }),
-      setIntroduced: () => set({ introduced: true }),
+      setEntries:         (entries) => set({ entries }),
+      setSort:            (sort) => set({ sort }),
+      setFormOpen:        (formOpen) => set({ formOpen }),
+      setIntroduced:      () => set({ introduced: true }),
+      setLastCollectedId: (id) => set({ lastCollectedId: id }),
+      clearLastCollected: () => set({ lastCollectedId: null }),
     }),
     {
-      name: 'tc_entries',
-      onRehydrateStorage: () => (state) => {
-        if (state && state.entries.length === 0) {
-          const { SEED_ENTRIES } = require('./seeds');
-          state.entries = SEED_ENTRIES.map((e: { mood: string; note: string; reasons: string[]; date: string }, i: number) => ({
-            ...e, id: i + 1, createdAt: Date.now() - (15 - i) * 86400000,
-          }));
-        }
-      },
+      name: 'tc_prefs',
+      partialize: (_state) => ({}),
     }
   )
 );

@@ -1,28 +1,38 @@
 @import "tailwindcss";
 
 :root {
-  --bg:           #f4f0e8;
-  --ink:          #1c1a17;
-  --muted:        rgba(28, 26, 23, 0.38);
-  --line:         rgba(28, 26, 23, 0.10);
+  /* background */
+  --bg:             #F6F5F2;
+  --card-bg:        #2a2825;
 
-  --sad:          #7aadca;
-  --sad-mid:      #4d87a8;
-  --sad-deep:     #2e5f80;
-  --sad-stroke:   #3a7096;
+  /* ink scale */
+  --ink:            #27251f;
+   --ink-80:         rgba(39,37,31,0.80);
+  --ink-60:         rgba(39,37,31,0.60);
+  --ink-35:         rgba(39,37,31,0.35);
+  --ink-14:         rgba(39,37,31,0.14);
+  --ink-07:         rgba(39,37,31,0.07);
 
-  --happy:        #d4a843;
-  --happy-mid:    #b8842a;
-  --happy-deep:   #8a5f18;
-  --happy-stroke: #a07020;
+  /* aliases kept for any missed references */
+  --muted:          rgba(39,37,31,0.35);
+  --line:           rgba(39,37,31,0.14);
 
-  --yawn:         #a09a93;
-  --yawn-mid:     #7a746e;
-  --yawn-deep:    #5a5450;
-  --yawn-stroke:  #6a6460;
+  /* tears */
+  --sad:            #7399d0;
+  --sad-deep:       #4b75b0;
 
-  --cork:         #c8b48a;
-  --glass-stroke: #8aaabb;
+  --touched:        #C8A36A;
+  --touched-deep:   #9e7a3e;
+  --touched-stroke: #9e7a3e;
+
+  --unsure:         #7A7D80;
+  --unsure-deep:    #5a5e62;
+
+  /* bottle */
+  --glass-fill:     rgba(74,91,115,0.08);
+  --glass-stroke:   rgba(74,91,115,0.35);
+  --cork:           #c8b48a;
+  --cork-stroke:    #a89060;
 }
 
 *, *::before, *::after {
@@ -33,14 +43,18 @@
 
 html, body {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 body {
-  background: var(--bg);
+  overflow-x: hidden; /* prevent horizontal scroll from 100vw elements */
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 50% 40%, transparent 50%, rgba(39,37,31,0.04) 100%),
+    var(--bg);
   color: var(--ink);
-  font-family: var(--font-mono), 'DM Mono', monospace;
+  font-family: var(--font-ui), 'Inter', system-ui, sans-serif;
 }
 
 body::before {
@@ -49,7 +63,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.035;
+  opacity: 0.020;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
   background-size: 300px 300px;
 }

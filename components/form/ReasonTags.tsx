@@ -1,45 +1,64 @@
 'use client';
 
-const REASONS = ['work', 'friends', 'body', 'music', 'memory', 'joy', 'unknown'];
+import { Intensity } from '@/lib/types';
 
-interface ReasonTagsProps {
-  selected: string[];
-  onChange: (r: string[]) => void;
+const LEVELS: { id: Intensity; label: string; desc: string }[] = [
+  { id: 'mist', label: 'mist', desc: 'barely there' },
+  { id: 'flow', label: 'flow', desc: 'quiet weeping' },
+  { id: 'pour', label: 'pour', desc: 'full cry' },
+];
+
+interface IntensityPickerProps {
+  value: Intensity;
+  onChange: (i: Intensity) => void;
 }
 
-export default function ReasonTags({ selected, onChange }: ReasonTagsProps) {
-  const toggle = (r: string) => {
-    if (selected.includes(r)) {
-      onChange(selected.filter(s => s !== r));
-    } else {
-      onChange([...selected, r]);
-    }
-  };
-
+export default function IntensityPicker({ value, onChange }: IntensityPickerProps) {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-      {REASONS.map(r => {
-        const active = selected.includes(r);
+    <div style={{ display: 'flex', gap: 6 }}>
+      {LEVELS.map(l => {
+        const active = value === l.id;
         return (
           <button
-            key={r}
+            key={l.id}
             type="button"
-            onClick={() => toggle(r)}
+            onClick={() => onChange(l.id)}
             style={{
-              fontFamily: 'var(--font-mono)',
-              fontSize: 9,
-              textTransform: 'uppercase',
-              letterSpacing: '0.12em',
-              padding: '4px 8px',
+              flex: 1,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: 4,
+              padding: '8px 6px',
               background: active ? 'var(--ink)' : 'transparent',
-              color: active ? 'var(--bg)' : 'var(--ink)',
-              border: `1px solid ${active ? 'var(--ink)' : 'var(--line)'}`,
+              border: `1px solid ${active ? 'rgba(39,37,31,0.22)' : 'var(--ink-14)'}`,
               cursor: 'pointer',
               outline: 'none',
-              transition: 'background 0.12s, color 0.12s',
+              transition: 'background 0.12s, border-color 0.12s',
             }}
           >
-            {r}
+            <span
+              style={{
+                fontFamily: 'var(--font-ui)',
+                fontSize: 14,
+                fontWeight: 300,
+                letterSpacing: '0.06em',
+                color: active ? 'var(--bg)' : 'var(--ink-60)',
+              }}
+            >
+              {l.label}
+            </span>
+            {/* <span
+              style={{
+                fontFamily: 'var(--font-ui)',
+                fontSize: 12,
+                fontWeight: 300,
+                letterSpacing: '0.04em',
+                color: active ? 'rgba(246,245,242,0.55)' : 'var(--ink-35)',
+              }}
+            >
+              {l.desc}
+            </span> */}
           </button>
         );
       })}

@@ -12,13 +12,13 @@ export default function DateAxis({ entries, vp }: DateAxisProps) {
   const dates = [...new Set(entries.map(e => e.date))].sort();
   if (dates.length === 0) return null;
 
-  const colW = (vp.w - 140) / dates.length;
+  const colW = (vp.w - 80) / dates.length;
   const baselineY = vp.h * 0.76 + 20;
 
   return (
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
       {dates.map((date, i) => {
-        const x = 70 + i * colW + colW / 2;
+        const x = 40 + i * colW + colW / 2;
         return (
           <div
             key={date}
@@ -27,15 +27,15 @@ export default function DateAxis({ entries, vp }: DateAxisProps) {
               left: x,
               top: baselineY,
               transform: 'translateX(-50%)',
-              fontFamily: 'var(--font-mono)',
-              fontSize: 9,
-              textTransform: 'uppercase',
-              letterSpacing: '0.10em',
-              color: 'var(--muted)',
+              fontFamily: 'var(--font-ui)',
+              fontSize: 12,
+              fontWeight: 300,
+              letterSpacing: '0.06em',
+              color: 'var(--ink-35)',
               whiteSpace: 'nowrap',
             }}
           >
-            {format(new Date(date + 'T00:00:00'), 'MM-dd')}
+            {i === 0 ? format(new Date(date + 'T00:00:00'), 'MM/d') :format(new Date(date + 'T00:00:00'), 'd')}
           </div>
         );
       })}

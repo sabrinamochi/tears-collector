@@ -1,10 +1,13 @@
-export type Mood = 'sad' | 'happy' | 'yawn';
+export type Mood = 'sad' | 'touched' | 'unsure';
+
+export type Intensity = 'mist' | 'flow' | 'pour';
 
 export type TearEntry = {
   id: number;
   mood: Mood;
   note: string;
-  reasons: string[];
+  intensity: Intensity;
+  nickname?: string;
   date: string;       // 'YYYY-MM-DD'
   createdAt: number;  // Date.now()
 };

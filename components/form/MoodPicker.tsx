@@ -1,22 +1,22 @@
 'use client';
 
 import { Mood } from '@/lib/types';
-import { TEAR_BASE_PATH } from '@/lib/tearShape';
+import { TEAR_BASE_PATH, INNER_PATHS } from '@/lib/tearShape';
 
 interface MoodPickerProps {
   value: Mood;
   onChange: (m: Mood) => void;
 }
 
-const MOODS: { id: Mood; label: string; color: string; stroke: string }[] = [
-  { id: 'sad',   label: 'sad',   color: '#7aadca', stroke: '#3a7096' },
-  { id: 'happy', label: 'happy', color: '#d4a843', stroke: '#a07020' },
-  { id: 'yawn',  label: 'yawn',  color: '#a09a93', stroke: '#6a6460' },
+const MOODS: { id: Mood; label: string; fill: string; deep: string }[] = [
+  { id: 'sad',     label: 'sad',     fill: '#7399d0', deep: '#4b75b0' },
+  { id: 'touched', label: 'touched', fill: '#C8A36A', deep: '#9e7a3e' },
+  { id: 'unsure',  label: 'unsure',  fill: '#7A7D80', deep: '#5a5e62' },
 ];
 
 export default function MoodPicker({ value, onChange }: MoodPickerProps) {
   return (
-    <div style={{ display: 'flex', gap: 16, justifyContent: 'center' }}>
+    <div style={{ display: 'flex', gap: 8, justifyContent: 'center' }}>
       {MOODS.map(m => {
         const active = value === m.id;
         return (
@@ -25,34 +25,40 @@ export default function MoodPicker({ value, onChange }: MoodPickerProps) {
             type="button"
             onClick={() => onChange(m.id)}
             style={{
+              flex: 1,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: 8,
-              padding: '12px 16px',
+              gap: 7,
+              padding: '11px 6px',
               background: active ? 'var(--ink)' : 'transparent',
-              border: `1px solid ${active ? 'var(--ink)' : 'var(--line)'}`,
+              border: `1px solid ${active ? 'rgba(39,37,31,0.22)' : 'var(--ink-14)'}`,
               cursor: 'pointer',
               outline: 'none',
-              transition: 'background 0.15s, border-color 0.15s',
+              transition: 'border-color 0.15s',
             }}
           >
-            <svg viewBox="0 0 40 55" width={32} height={44}>
+            <svg viewBox="0 0 40 55" width={16} height={22}>
               <path
                 d={TEAR_BASE_PATH}
-                fill={m.color}
-                fillOpacity={active ? 0.9 : 0.65}
-                stroke={m.stroke}
-                strokeWidth={0.8}
+                fill={m.fill}
+                fillOpacity={active ? 0.80 : 0.60}
+                stroke="none"
               />
+              <path
+                d={INNER_PATHS[0]}
+                fill={m.deep}
+                fillOpacity={active ? 0.30 : 0.20}
+              />
+              <ellipse cx={13} cy={17} rx={4} ry={7} transform="rotate(-20,13,17)" fill="white" fillOpacity={active ? 0.20 : 0.14} />
             </svg>
             <span
               style={{
-                fontFamily: 'var(--font-mono)',
-                fontSize: 9,
-                textTransform: 'uppercase',
-                letterSpacing: '0.12em',
-                color: active ? 'var(--bg)' : 'var(--ink)',
+                fontFamily: 'var(--font-ui)',
+                fontSize: 14,
+                fontWeight: 300,
+                letterSpacing: '0.08em',
+                color: active ? 'var(--bg)' : 'var(--ink-60)',
               }}
             >
               {m.label}
