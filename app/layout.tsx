@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 
-export const metadataBase = new URL('https://sabrinamochi.github.io');
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -18,18 +17,20 @@ const inter = Inter({
 });
 
 
+const SITE = 'https://sabrinamochi.github.io';
+const BASE = `${SITE}/tears-collector`;
+
 export const metadata = {
   title: "Tears Collector",
   description: "A small project documenting my feelings after being laid off.",
   openGraph: {
     title: "Tears Collector",
-    description:
-      "A small project documenting my feelings after being laid off.",
-    url: "https://sabrinamochi.github.io/tears-collector/",
+    description: "A small project documenting my feelings after being laid off.",
+    url: `${BASE}/`,
     siteName: "Tears Collector",
     images: [
       {
-        url: "/tears-collector/social.jpg",
+        url: `${BASE}/social.jpg`, // ABSOLUTE
         width: 1200,
         height: 630,
       },
@@ -39,9 +40,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tears Collector",
-    description:
-      "A small project documenting my feelings after being laid off.",
-    images: ["/tears-collector/social.jpg"],
+    description: "A small project documenting my feelings after being laid off.",
+    images: [`${BASE}/social.jpg`], // ABSOLUTE
   },
 };
 export default function RootLayout({
