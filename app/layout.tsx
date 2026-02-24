@@ -1,22 +1,45 @@
-import type { Metadata } from 'next';
-import { Fraunces, Inter } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Fraunces, Inter } from "next/font/google";
+import "./globals.css";
 
 const fraunces = Fraunces({
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  weight: ['300', '400'],
-  variable: '--font-display',
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  weight: ["300", "400"],
+  variable: "--font-display",
 });
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-ui',
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-ui",
 });
 
 export const metadata: Metadata = {
-  title: 'tears collector',
+  title: "tears collector",
+  description: "A small project documenting my feelings after being laid off.",
+  openGraph: {
+    title: "Tears Collector",
+    description:
+      "A small project documenting my feelings after being laid off.",
+    url: "https://sabrinamochi.github.io/tears-collector",
+    siteName: "Tears Collector",
+    images: [
+      {
+        url: "/tears-collector/social.png", // important for basePath
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tears Collector",
+    description:
+      "A small project documenting my feelings after being laid off.",
+    images: ["/tears-collector/social.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +58,14 @@ export default function RootLayout({
         >
           <defs>
             {([1, 7, 13, 19, 5] as const).map((seed, i) => (
-              <filter key={i} id={`wc${i}`} x="-15%" y="-15%" width="130%" height="130%">
+              <filter
+                key={i}
+                id={`wc${i}`}
+                x="-15%"
+                y="-15%"
+                width="130%"
+                height="130%"
+              >
                 <feTurbulence
                   type="fractalNoise"
                   baseFrequency="0.038 0.052"
