@@ -1,0 +1,59 @@
+[    3319ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 1292009ms] ReferenceError: useRouter is not defined
+    at SortBar (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_7fd9d189._.js?id=%255Bproject%255D%252FDesktop%252Ftears-collector%252Ftears-collector%252Fcomponents%252Fui%252FSortBar.tsx+%255Bapp-client%255D+%2528ecmascript%2529:38:20)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10154:316)
+    at flushSyncWork$1 (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9237:86)
+    at Object.scheduleRefresh (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:299:13)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:384:38)
+    at applyUpdate (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:878:31)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:886:13
+[ 1292034ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 1292230ms] ReferenceError: useRouter is not defined
+    at SortBar (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js?id=%255Bproject%255D%252FDesktop%252Ftears-collector%252Ftears-collector%252Fcomponents%252Fui%252FSortBar.tsx+%255Bapp-client%255D+%2528ecmascript%2529:38:20)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6687:639)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10154:316)
+    at flushSyncWork$1 (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9237:86)
+    at Object.scheduleRefresh (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:299:13)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:384:38)
+    at applyUpdate (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:878:31)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:886:13
+[ 1292603ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/about:0
+[ 1293053ms] ReferenceError: useRouter is not defined
+    at SortBar (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_7fd9d189._.js:82:20)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6687:639)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10230:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:2647:64)
+[ 1295120ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 1305351ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 1323471ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297

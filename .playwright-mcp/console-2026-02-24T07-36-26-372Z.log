@@ -1,0 +1,32 @@
+[    4488ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  145263ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  149775ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  151536ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  455793ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  464620ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  864188ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  974176ms] [ERROR] ./Desktop/tears-collector/tears-collector/components/canvas/TearTooltip.tsx:90:25
+Parsing ecmascript source code failed
+  88 |               letterSpacing: '0.14em',
+  89 |               color: 'rgba(246,245,242,0.45)',
+> 90 |               margin: 2 0,
+     |                         ^
+  91 |             }}
+  92 |           >
+  93 |             by {entry.nickname}
+
+Expected '</', got 'numeric literal'
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/tears-collector/tears-collector/components/canvas/TearTooltip.tsx [Client Component Browser]
+    ./Desktop/tears-collector/tears-collector/components/canvas/TearCanvas.tsx [Client Component Browser]
+    ./Desktop/tears-collector/tears-collector/app/page.tsx [Client Component Browser]
+    ./Desktop/tears-collector/tears-collector/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/tears-collector/tears-collector/components/canvas/TearTooltip.tsx [Client Component SSR]
+    ./Desktop/tears-collector/tears-collector/components/canvas/TearCanvas.tsx [Client Component SSR]
+    ./Desktop/tears-collector/tears-collector/app/page.tsx [Client Component SSR]
+    ./Desktop/tears-collector/tears-collector/app/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 1059642ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297

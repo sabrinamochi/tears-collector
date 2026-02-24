@@ -1,0 +1,35 @@
+[   40359ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  176661ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  198526ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  292973ms] RangeError: Format string contains an unescaped latin alphabet character `n`
+    at http://localhost:3000/_next/static/chunks/9a39d_a0decd33._.js:15628:19
+    at Array.map (<anonymous>)
+    at format (http://localhost:3000/_next/static/chunks/9a39d_a0decd33._.js:15606:47)
+    at eval (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js?id=%255Bproject%255D%252FDesktop%252Ftears-collector%252Ftears-collector%252Fcomponents%252Fui%252FDateAxis.tsx+%255Bapp-client%255D+%2528ecmascript%2529:41:259)
+    at Array.map (<anonymous>)
+    at DateAxis (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js?id=%255Bproject%255D%252FDesktop%252Ftears-collector%252Ftears-collector%252Fcomponents%252Fui%252FDateAxis.tsx+%255Bapp-client%255D+%2528ecmascript%2529:26:25)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10154:316)
+    at flushSyncWork$1 (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9237:86)
+    at Object.scheduleRefresh (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:299:13)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:384:38)
+    at applyUpdate (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:878:31)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:886:13
+[  295913ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  299415ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  325014ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  341428ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  462984ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  528708ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  597993ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297

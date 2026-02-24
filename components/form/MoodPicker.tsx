@@ -11,7 +11,7 @@ interface MoodPickerProps {
 const MOODS: { id: Mood; label: string; fill: string; deep: string }[] = [
   { id: 'sad',     label: 'sad',     fill: '#7399d0', deep: '#4b75b0' },
   { id: 'touched', label: 'touched', fill: '#C8A36A', deep: '#9e7a3e' },
-  { id: 'unsure',  label: 'unsure',  fill: '#7A7D80', deep: '#5a5e62' },
+  { id: 'unsure',  label: 'unsure',  fill: '#a1a1a1ff', deep: '#88898aff' },
 ];
 
 export default function MoodPicker({ value, onChange }: MoodPickerProps) {

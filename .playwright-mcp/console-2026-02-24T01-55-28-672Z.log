@@ -1,0 +1,1381 @@
+[    3007ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[    9949ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  168726ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  175216ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  262504ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[  475213ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 2469314ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 2515476ms] [ERROR] Received NaN for the `%s` attribute. If this is expected, cast the value to a string. width @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 2515477ms] [ERROR] Received NaN for the `%s` attribute. If this is expected, cast the value to a string. height @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 2515478ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515478ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515479ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515479ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515479ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515479ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515480ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515480ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515480ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515480ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515480ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515481ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515481ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2515481ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 2528943ms] TypeError: Cannot read properties of undefined (reading 'base')
+    at TearDrop.useMemo[svgMarkup] (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js?id=%255Bproject%255D%252FDesktop%252Ftears-collector%252Ftears-collector%252Fcomponents%252Fcanvas%252FTearDrop.tsx+%255Bapp-client%255D+%2528ecmascript%2529:62:38)
+    at updateMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:5444:21)
+    at Object.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:15255:24)
+    at exports.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:1742:36)
+    at TearDrop (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js?id=%255Bproject%255D%252FDesktop%252Ftears-collector%252Ftears-collector%252Fcomponents%252Fcanvas%252FTearDrop.tsx+%255Bapp-client%255D+%2528ecmascript%2529:50:251)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10154:316)
+    at flushSyncWork$1 (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9237:86)
+    at Object.scheduleRefresh (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:299:13)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:384:38)
+    at applyUpdate (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:878:31)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:886:13
+[ 2541243ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 2541389ms] TypeError: Cannot read properties of undefined (reading 'base')
+    at TearDrop.useMemo[svgMarkup] (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js?id=%255Bproject%255D%252FDesktop%252Ftears-collector%252Ftears-collector%252Fcomponents%252Fcanvas%252FTearDrop.tsx+%255Bapp-client%255D+%2528ecmascript%2529:62:38)
+    at mountMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:5424:25)
+    at Object.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:15003:24)
+    at exports.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:1742:36)
+    at TearDrop (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js?id=%255Bproject%255D%252FDesktop%252Ftears-collector%252Ftears-collector%252Fcomponents%252Fcanvas%252FTearDrop.tsx+%255Bapp-client%255D+%2528ecmascript%2529:50:251)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10230:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:2647:64)
+[ 2541297ms] [WARNING] WebSocket connection to 'wss://jmrtnpplvconwypwznes.supabase.co/realtime/v1/websocket?apikey=sb_publishable_7g4da_c_yr-8WfLDUqhUPQ_JyQ2FNct&vsn=2.0.0' failed: WebSocket is closed before the connection is established. @ http://localhost:3000/_next/static/chunks/9a39d_14c2af7c._.js:6867
+[ 2543206ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 2544402ms] TypeError: Cannot read properties of undefined (reading 'base')
+    at TearDrop.useMemo[svgMarkup] (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:303:38)
+    at mountMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:5424:25)
+    at Object.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:15003:24)
+    at exports.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:1742:36)
+    at TearDrop (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:291:251)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10154:316)
+    at processRootScheduleInMicrotask (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10175:106)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10249:158
+[ 2545737ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 2584191ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 2585443ms] TypeError: Cannot read properties of undefined (reading 'base')
+    at TearDrop.useMemo[svgMarkup] (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:303:38)
+    at mountMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:5424:25)
+    at Object.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:15003:24)
+    at exports.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:1742:36)
+    at TearDrop (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:291:251)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10154:316)
+    at processRootScheduleInMicrotask (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10175:106)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10249:158
+[ 2589854ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 2590040ms] TypeError: Cannot read properties of undefined (reading 'base')
+    at TearDrop.useMemo[svgMarkup] (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:303:38)
+    at mountMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:5424:25)
+    at Object.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:15003:24)
+    at exports.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:1742:36)
+    at TearDrop (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:291:251)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10230:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:2647:64)
+[ 2589897ms] [WARNING] WebSocket connection to 'wss://jmrtnpplvconwypwznes.supabase.co/realtime/v1/websocket?apikey=sb_publishable_7g4da_c_yr-8WfLDUqhUPQ_JyQ2FNct&vsn=2.0.0' failed: WebSocket is closed before the connection is established. @ http://localhost:3000/_next/static/chunks/9a39d_14c2af7c._.js:6867
+[ 2595595ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 2596788ms] TypeError: Cannot read properties of undefined (reading 'base')
+    at TearDrop.useMemo[svgMarkup] (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:303:38)
+    at mountMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:5424:25)
+    at Object.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:15003:24)
+    at exports.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:1742:36)
+    at TearDrop (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:291:251)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10154:316)
+    at processRootScheduleInMicrotask (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10175:106)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10249:158
+[ 2596787ms] [WARNING] WebSocket connection to 'wss://jmrtnpplvconwypwznes.supabase.co/realtime/v1/websocket?apikey=sb_publishable_7g4da_c_yr-8WfLDUqhUPQ_JyQ2FNct&vsn=2.0.0' failed: WebSocket is closed before the connection is established. @ http://localhost:3000/_next/static/chunks/9a39d_14c2af7c._.js:6867
+[ 3166594ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 3168471ms] TypeError: Cannot read properties of undefined (reading 'base')
+    at TearDrop.useMemo[svgMarkup] (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:303:38)
+    at mountMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:5424:25)
+    at Object.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:15003:24)
+    at exports.useMemo (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_1aef286b._.js:1742:36)
+    at TearDrop (http://localhost:3000/_next/static/chunks/Desktop_tears-collector_tears-collector_f506a9fc._.js:291:251)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:9105:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10154:316)
+    at processRootScheduleInMicrotask (http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10175:106)
+    at http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:10249:158
+[ 4437870ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 5128580ms] [ERROR] Received NaN for the `%s` attribute. If this is expected, cast the value to a string. width @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 5128581ms] [ERROR] Received NaN for the `%s` attribute. If this is expected, cast the value to a string. height @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 5128581ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128582ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128582ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128582ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128583ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128583ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128583ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128583ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128584ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128584ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128584ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128584ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128585ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128585ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128585ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128585ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128586ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128586ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128586ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128586ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128587ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128587ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128587ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128587ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128588ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128588ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128588ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128588ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128589ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128589ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128589ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128589ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128590ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128590ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128590ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128590ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128591ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128591ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128591ms] [ERROR] Error: <svg> attribute width: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5128591ms] [ERROR] Error: <svg> attribute height: Expected length, "NaN". @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_compiled_react-dom_7eb3e5f0._.js:1392
+[ 5202489ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 5304916ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 5508237ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 7180918ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 7192331ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 7468996ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 7495337ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 7516866ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 8245928ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8256528ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8256569ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8263548ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8263579ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8268307ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8268385ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8271689ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8271795ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8280638ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8280689ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8287896ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8287972ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8291594ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8291684ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8305558ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8305616ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8316428ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8316472ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8319848ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8319940ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8322294ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8331529ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8331619ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8334939ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8364209ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8364273ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8369667ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8369767ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8374864ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8374941ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8378393ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8378535ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8380946ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8381052ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8385766ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8385872ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8390749ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8417275ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8522525ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8522856ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8522917ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8523148ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 8523232ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[ 8523334ms] Error: ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1008:59)
+    at DevBundlerService.getCompilationError (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/dev/next-dev-server.js:706:42)
+    at DevServer.findPageComponents (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/dev/next-dev-server.js:676:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/base-server.js:1733:26)
+[ 8523339ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1920
+[ 8523339ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1920
+[ 8523384ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1920
+[ 8550246ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1920
+[ 8550305ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[ 8550369ms] Error: ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1008:59)
+    at DevBundlerService.getCompilationError (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/dev/next-dev-server.js:706:42)
+    at DevServer.findPageComponents (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/dev/next-dev-server.js:676:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/chens/Desktop/tears-collector/tears-collector/node_modules/next/dist/server/base-server.js:1733:26)
+[ 8550371ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1920
+[ 8550371ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1920
+[ 8550410ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1920
+[ 8567759ms] [ERROR] ./Desktop/tears-collector/tears-collector/app/layout.tsx
+Module not found: Can't resolve 'next/font/google/target.css'
+Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Execution of resolve failed
+- Execution of resolve_internal failed
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+Error while looking up import map: Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+Debug info:
+- Execution of NextFontGoogleReplacer::import_map_result failed
+- Execution of *get_font_css_properties failed
+- Execution of font_options_from_query_map failed
+- Axes can only be defined for variable fonts when the weight property is nonexistent or set to `variable`.
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1920
+[ 8580745ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_dd1479ef._.js:1206
+[ 8708160ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 8820995ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 8853693ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 9063989ms] [ERROR] ./Desktop/tears-collector/tears-collector/lib/tearShape.ts:52:26
+Parsing ecmascript source code failed
+  50 | export function getTearVariants(id: number) {
+  51 |   return {
+> 52 |     innerIndex:     id % ,   // picks from INNER_PATHS
+     |                          ^
+  53 |     highlightIndex: id % 3,   // picks from HIGHLIGHTS
+  54 |     filterIndex:    id % 5,   // picks from wc0-wc4
+  55 |   };
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/tears-collector/tears-collector/lib/tearShape.ts [Client Component Browser]
+    ./Desktop/tears-collector/tears-collector/components/form/AddPanel.tsx [Client Component Browser]
+    ./Desktop/tears-collector/tears-collector/app/page.tsx [Client Component Browser]
+    ./Desktop/tears-collector/tears-collector/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/tears-collector/tears-collector/lib/tearShape.ts [Client Component SSR]
+    ./Desktop/tears-collector/tears-collector/components/form/AddPanel.tsx [Client Component SSR]
+    ./Desktop/tears-collector/tears-collector/app/page.tsx [Client Component SSR]
+    ./Desktop/tears-collector/tears-collector/app/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:3127
+[ 9361076ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
+[ 9483429ms] [ERROR] WebSocket connection to 'wss://jmrtnpplvconwypwznes.supabase.co/realtime/v1/websocket?apikey=sb_publishable_7g4da_c_yr-8WfLDUqhUPQ_JyQ2FNct&vsn=2.0.0' failed: Error in connection establishment: net::ERR_PROXY_CONNECTION_FAILED @ http://localhost:3000/_next/static/chunks/9a39d_14c2af7c._.js:5191

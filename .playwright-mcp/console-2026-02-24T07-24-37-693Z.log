@@ -1,0 +1,1 @@
+[    3107ms] [WARNING] You are trying to animate opacity from "undefined" to "0". "undefined" is not an animatable value.. For more information and steps for solving, visit https://motion.dev/troubleshooting/value-not-animatable @ http://localhost:3000/_next/static/chunks/9a39d_next_dist_4dafd789._.js:2297
