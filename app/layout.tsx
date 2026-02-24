@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "Tears Collector",
     images: [
       {
-        url: `${BASE}/social.jpg`, // ABSOLUTE
+        url: `${BASE}/social.png`, // ABSOLUTE
         width: 1200,
         height: 630,
       },
@@ -41,7 +41,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Tears Collector",
     description: "A small project documenting my feelings after being laid off.",
-    images: [`${BASE}/social.jpg`], // ABSOLUTE
+    images: [`${BASE}/social.png`], // ABSOLUTE
   },
 };
 export default function RootLayout({
