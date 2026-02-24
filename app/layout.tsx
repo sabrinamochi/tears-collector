@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Tears Collector",
     images: [
       {
-        url: "/tears-collector/social.png", // important for basePath
+        url: "/tears-collector/social.jpg", // important for basePath
         width: 1200,
         height: 630,
       },
