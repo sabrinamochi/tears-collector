@@ -127,7 +127,7 @@ export default function AddPanel() {
             {/* Header */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
               <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontWeight: 300, fontSize: 18, color: 'var(--ink)', opacity: 0.65 }}>
-                {verified ? 'what made you cry?' : "what's my dog's name?"}
+                {verified ? 'what made you cry?' : "Enter a code: what's my dog's name?"}
               </span>
               <button
                 type="button"
