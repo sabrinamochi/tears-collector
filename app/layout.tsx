@@ -15,18 +15,19 @@ const inter = Inter({
   variable: "--font-ui",
 });
 
-export const metadata: Metadata = {
-  title: "tears collector",
+export const metadataBase = new URL("https://sabrinamochi.github.io");
+export const metadata = {
+  title: "Tears Collector",
   description: "A small project documenting my feelings after being laid off.",
   openGraph: {
     title: "Tears Collector",
     description:
       "A small project documenting my feelings after being laid off.",
-    url: "https://sabrinamochi.github.io/tears-collector",
+    url: "https://sabrinamochi.github.io/tears-collector/",
     siteName: "Tears Collector",
     images: [
       {
-        url: "/tears-collector/social.jpg", // important for basePath
+        url: "/tears-collector/social.jpg",
         width: 1200,
         height: 630,
       },
@@ -41,7 +42,6 @@ export const metadata: Metadata = {
     images: ["/tears-collector/social.jpg"],
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
